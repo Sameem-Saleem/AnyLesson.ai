@@ -1,0 +1,203 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgb(30, 30, 30);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 1rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(200, 200, 200);
+}
+
+#lesson {
+  background-color: #F8F4F9;
+  height: 100%;
+  width: 75%;
+  position: absolute;
+  left: 18rem;
+  top: 4.4rem;
+  padding: 2rem;
+}
+
+.lesson-icon {
+  padding: 0.5rem;
+  transition: background-color 0.5s;
+  border-radius: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.lesson-icon:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+#home {
+  background-color: #F8F4F9;
+  height: 100%;
+  width: 79.5%;
+  position: absolute;
+  left: 18rem;
+  top: 4.4rem;
+}
+
+.home-card {
+  width: 14rem;
+  height: 12rem;
+  margin: 2rem;
+  background-color: #FFD6AF;
+  border-radius: 2rem;
+  transition: box-shadow 0.5s;
+}
+
+.home-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+  background-color: white;
+  color: purple;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.home-card-details {
+  background-color: #C49E85;
+  color: white;
+  text-align: left;
+  padding: 1rem;
+  height: 4rem;
+  position: relative;
+  top: 1.5rem;
+}
+ul {
+  padding-left: 2rem;
+}
+.card-head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  top: 1rem;
+}
+
+
+#selected {
+  background-color: rgb(199, 199, 199);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+#search {
+  position: fixed;
+  bottom: 1rem;
+  left: 0rem;
+}
+
+#sidebar {
+  position: fixed;
+}
+
+.section {
+  display: flex;
+  padding: 1rem;
+  width: 16rem;
+  align-items: center;
+  margin-top: 0.5rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: background-color 0.5s;
+}
+
+.section:hover {
+  background-color: #f0e6ff;
+}
+
+.section p {
+  color: rgb(30, 30, 30);
+  font-size: 1.25rem;
+}
+
+.section img {
+  margin-right: 1rem;
+}
+
+#add {
+  padding: 1rem;
+  border-radius: 2rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #C49E85;
+  transform: rotate(45deg);
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  }
+
+a {
+  text-decoration: none;
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+a:hover {
+  color: #9e85c4;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  margin-right: 1rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+
+img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
